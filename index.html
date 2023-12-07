@@ -10,7 +10,7 @@
     <!---Responsive navbar-->
     <nav class=" bg-green-100 p-3 flex items-center justify-between shadow-2xl sticky top-0 z-10">
         <h1 class="text-3xl text-gray-600">Greenden</h1>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 md:hidden">
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 md:hidden">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
           </svg>
           
@@ -21,6 +21,19 @@
         </ul>
 
     </nav>
+    <!---Sidenavbar-->
+    <section id="sidenav" class="bg-green-100 fixed z-20 top-0 transition-all duration-1000 right-0 " style="width:50%; height:100vh;right: -50%;">
+        <div class="text-right p-5">
+            <p id="closenav" class="inline cursor-pointer">X</p>
+        </div>
+        <ul class="flex flex-col items-center text-gray-600 ">
+            <li class="hover:underline hover:text-black"><a href="#">Home</a></li>
+            <li class="hover:underline hover:text-black"><a href="./product.html">Product</a></li>
+            <li class="hover:underline hover:text-black"><a href="./contact.html">Contact Us</a></li>
+        </ul>
+    </section>
+
+
     <section class="p-4 bg-green-100 md:p-4 flex justify-center  ">
         <div> <p class="mb-4">We offer you a wide Range of Artificial and Natural Flowers</p>
             <h1 class="text-3xl md:text-5xl font-bold mb-5">Plants for your future</h1>
@@ -136,6 +149,8 @@
             <p>@2023 Greenday.com</p>
         </div>
      </section>
+
+     <script src="./index.js"></script>
        
         
 </body>

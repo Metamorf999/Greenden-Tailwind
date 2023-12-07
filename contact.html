@@ -11,7 +11,7 @@
     
         <nav class="bg-green-100 flex text-center justify-between font-bold p-4 ">
             <h1>GREENDEN</h1>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 md:hidden">
+            <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 md:hidden">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
               </svg>
             <ul class="flex gap-2 hidden md:flex">
@@ -20,6 +20,18 @@
                 <li class="hover:underline hover:text-black"><a href="#">Contact Us</a></li>
             </ul>
         </nav>
+        <!---Sidenavbar-->
+    <section id="sidenav" class="bg-green-100 fixed z-20 top-0 transition-all duration-1000 right-0 " style="width:50%; height:100vh;right: -50%;">
+        <div class="text-right p-5">
+            <p id="closenav" class="inline cursor-pointer">X</p>
+        </div>
+        <ul class="flex flex-col items-center text-gray-600 ">
+            <li class="hover:underline hover:text-black"><a href="/index.html">Home</a></li>
+            <li class="hover:underline hover:text-black"><a href="./product.html">Product</a></li>
+            <li class="hover:underline hover:text-black"><a href="#">Contact Us</a></li>
+        </ul>
+    </section>
+
         <!---Contact us-->
         <section class="bg-white dark:bg-gray-900">
             <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
@@ -53,7 +65,9 @@
             </div>
         </section>
 
-       
+       <script src="./contact.js">
+
+       </script>
     
 </body>
 </html>
